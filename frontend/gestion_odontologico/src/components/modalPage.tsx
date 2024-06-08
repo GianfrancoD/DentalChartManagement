@@ -1,10 +1,10 @@
 import { Props } from "../interfaces/modal_interfaces";
 
 export const Modalp: React.FC<Props> = ({ isOpen, onClose }) => {
-  //const handleCloseModal = (e: { preventDefault: () => string }) => {
-  //e.preventDefault();
-  // onClose();
-  //};
+  const handleCloseModal = (event: { preventDefault: () => string }) => {
+    event.preventDefault();
+    onClose();
+  };
 
   return (
     <>
@@ -50,10 +50,7 @@ export const Modalp: React.FC<Props> = ({ isOpen, onClose }) => {
               Enviar
             </button>
             <button
-              onClick={(e) => {
-                e.preventDefault();
-                onClose();
-              }}
+              onClick={handleCloseModal}
               className="tablet:-translate-y-[35.5em] tablet:translate-x-[21em] movil:translate-x-[6em] movil:-translate-y-[26.9em]"
             >
               <span className="material-symbols-outlined">Cancel</span>
