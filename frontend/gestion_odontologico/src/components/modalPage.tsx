@@ -1,30 +1,30 @@
 import { Props } from "../interfaces/modal_interfaces";
 
-export const Modalp: React.FC<Props> = ({ isOpen, onClose }) => {
-  //const handleCloseModal = (e: { preventDefault: () => string }) => {
-  //e.preventDefault();
-  // onClose();
-  //};
+export const Modalp: React.FC<Props> = ({ isOpen, onClose, title }) => {
+  const handleCloseModal = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+    onClose();
+  };
 
   return (
     <>
       {isOpen && (
-        <div className="w-full h-full bg-black bg-opacity-50 backdrop-blur-sm fixed flex place-content-center place-items-center -translate-y-[26.2rem] rounded tablet:-translate-y-[0.6rem] laptop:-translate-y-[7.5rem] desktop:-translate-y-[26.2rem]">
+        <div className="w-full h-full bg-black bg-opacity-50 backdrop-blur-sm fixed flex place-content-center place-items-center -translate-y-[26.2rem] rounded tablet:-translate-y-[48.6rem] laptop:-translate-y-[46.3rem] desktop:-translate-y-[31.9rem] movil:-translate-y-[18.3rem]">
           <div className="bg-white p-5 rounded-[1.5rem] flex flex-col justify-center gap-5 tablet:w-[48em] tablet:h-[44em] tablet:mb-10 movil:w-60 movil:h-96 movil:translate-y-10">
             <img
               src="https://cdn.pixabay.com/photo/2013/07/12/15/50/dentistry-150409_1280.png"
-              alt="Logo"
+              alt="Logo diente modal"
               className="tablet:w-[8em] tablet:h-[15em] tablet:m-5 tablet:translate-x-[17em] tablet:-translate-y-[5em] movil:w-[2em] movil:h-[4em] movil:m-[5em] movil:translate-x-[0.5em] movil:translate-y-[3em]"
             />
             <h1 className="tablet:flex tablet:place-content-center tablet:text-wrap tablet:text-3xl tablet:-translate-y-[2em] movil:flex movil:place-content-center movil:text-wrap movil:text-2xl movil:-translate-y-[2em] text-blue-600">
-              Sign in to your account
+              {title}
             </h1>
             <div className="tablet:flex tablet:place-content-center tablet:flex-col tablet:place-items.center tablet:-translate-y-[3em] tablet:m-auto movil:flex movil:place-content-center movil:flex-col movil:place-items.center movil:-translate-y-[4.5em] movil:m-auto">
               <label htmlFor="" className="">
                 <span className="material-symbols-outlined tablet:material-symbols-outlined tablet:translate-y-[1.6em] tablet:translate-x-[1em] movil:material-symbols-outlined movil:translate-y-[1.7em] movil:translate-x-[0.3em] text-[1.4em]">
                   id_card
                 </span>{" "}
-                Nombre
+                Name
               </label>
               <input
                 type="text"
@@ -47,13 +47,10 @@ export const Modalp: React.FC<Props> = ({ isOpen, onClose }) => {
               <a href="#">Forgot password?</a>
             </strong>
             <button className=" w-60 h-10 p-2  place-content-center place-items-center translate-x-[15em] -translate-y-10 bg-blue-400 rounded text-white movil:-translate-x-[1.3em] movil:-translate-y-[4.6em] movil:w-[8em] movil:ml-auto movil:mr-[0.7em] movil:mb-2 tablet:w-[20em] tablet:m-auto tablet:translate-x-[1em] tablet:-translate-y-[3em]">
-              Enviar
+              Send
             </button>
             <button
-              onClick={(e) => {
-                e.preventDefault();
-                onClose();
-              }}
+              onClick={handleCloseModal}
               className="tablet:-translate-y-[35.5em] tablet:translate-x-[21em] movil:translate-x-[6em] movil:-translate-y-[26.9em]"
             >
               <span className="material-symbols-outlined">Cancel</span>
