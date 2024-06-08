@@ -1,7 +1,7 @@
 import { Props } from "../interfaces/modal_interfaces";
 
 export const Modalp: React.FC<Props> = ({ isOpen, onClose, title }) => {
-  const handleCloseModal = (e: { preventDefault: () => Boolean }) => {
+  const handleCloseModal = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     onClose();
   };
@@ -9,7 +9,7 @@ export const Modalp: React.FC<Props> = ({ isOpen, onClose, title }) => {
   return (
     <>
       {isOpen && (
-        <div className="w-full h-full bg-black bg-opacity-50 backdrop-blur-sm fixed flex place-content-center place-items-center -translate-y-[26.2rem] rounded tablet:-translate-y-[0.6rem] laptop:-translate-y-[7.5rem] desktop:-translate-y-[26.2rem]">
+        <div className="w-full h-full bg-black bg-opacity-50 backdrop-blur-sm fixed flex place-content-center place-items-center -translate-y-[26.2rem] rounded tablet:-translate-y-[48.6rem] laptop:-translate-y-[46.3rem] desktop:-translate-y-[31.9rem] movil:-translate-y-[18.3rem]">
           <div className="bg-white p-5 rounded-[1.5rem] flex flex-col justify-center gap-5 tablet:w-[48em] tablet:h-[44em] tablet:mb-10 movil:w-60 movil:h-96 movil:translate-y-10">
             <img
               src="https://cdn.pixabay.com/photo/2013/07/12/15/50/dentistry-150409_1280.png"

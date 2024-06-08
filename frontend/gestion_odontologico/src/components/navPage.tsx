@@ -45,9 +45,25 @@ export const Menu: typeof ImageController = ({ ...brev }) => {
         </nav>
       </header>
       <ImageController {...brev} />
-      <p className="-my-80 mx-10 tablet:-translate-y-80 text-wrap text-xl tracking-wide font-serif text-gray-600 movil:hidden tablet:flex">
-        Software para administrar tu Consultas
-      </p>
+      <div className="desktop:-my-[8em] laptop:-my-[4em] tablet:-my-[1.7em] tablet:mx-10 tablet:-translate-y-80 text-wrap tablet:text-[3em] uppercase tablet:tracking-wide font-extralight tablet:text-blue-800 movil:hidden tablet:flex">
+        <ul>
+          <h1>
+            <li className="- font-black">
+              Clinical Records Management Software
+            </li>
+            <li className="font-black">
+              everything for your dental management
+            </li>
+          </h1>
+          <li className="text-sm">
+            👇🏻¿do you want agend a appoitment with the dentist? 👇🏻
+          </li>
+          <button className="bg-gray-200 w-[10em] h-[3em] text-[0.3em] rounded-md text-blue-500 uppercase flex place-content-evenly place-items-center m-5">
+            appoitment
+            <span className="material-symbols-outlined">oral_disease</span>
+          </button>
+        </ul>
+      </div>
       <Modalp
         isOpen={isOpen}
         onClose={handleCloseModal}
