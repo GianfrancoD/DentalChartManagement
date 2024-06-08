@@ -21,7 +21,7 @@ export const Menu: typeof ImageController = ({ ...brev }) => {
             <li className="mr-10">
               <img
                 src="https://cdn.pixabay.com/photo/2013/07/12/15/50/dentistry-150409_1280.png"
-                alt="logotipo"
+                alt="logotipo diente"
                 className="w-5 h-7"
               />
             </li>
@@ -48,7 +48,11 @@ export const Menu: typeof ImageController = ({ ...brev }) => {
       <p className="-my-80 mx-10 tablet:-translate-y-80 text-wrap text-xl tracking-wide font-serif text-gray-600 movil:hidden tablet:flex">
         Software para administrar tu Consultas
       </p>
-      <Modalp isOpen={isOpen} onClose={handleCloseModal} />
+      <Modalp
+        isOpen={isOpen}
+        onClose={handleCloseModal}
+        title={"Sign in to your account"}
+      />
     </>
   );
 };
