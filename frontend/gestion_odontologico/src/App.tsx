@@ -1,5 +1,6 @@
 import React from "react";
 import { Menu } from "./components/navPage";
+import { Hdashboard } from "./components/homedashboard";
 
 const App: React.FC = () => {
   return (
@@ -9,6 +10,7 @@ const App: React.FC = () => {
         alt="Imagen de dentista"
         className="w-full h-full"
       />
+      <Hdashboard />
     </>
   );
 };
