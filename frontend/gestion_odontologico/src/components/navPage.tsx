@@ -45,8 +45,8 @@ export const Menu: typeof ImageController = ({ ...brev }) => {
         </nav>
       </header>
       <ImageController {...brev} />
-      <div className="desktop:-my-[8em] laptop:-my-[4em] tablet:-my-[1.7em] tablet:mx-10 tablet:-translate-y-80 text-wrap tablet:text-[3em] uppercase tablet:tracking-wide font-extralight tablet:text-blue-800 movil:hidden tablet:flex">
-        <ul>
+      <div className="desktop:-my-[8em] laptop:-my-[4em] tablet:-my-[1.7em] tablet:mx-10 tablet:drop-shadow-[2px_2px_var(--tw-shadow-color)] tablet:shadow-blue-500 tablet:-translate-y-80 text-wrap tablet:text-[3em] uppercase tablet:tracking-wide font-extralight tablet:text-blue-200 movil:m-10 movil:-my-[10rem] movil:text-blue-200 movil:drop-shadow-[1px_2px_var(--tw-shadow-color)] movil:shadow-blue-500">
+        <ul className="flex flex-col place-content-center place-items-center text-center flex-wrap">
           <h1>
             <li className="- font-black">
               Clinical Records Management Software
@@ -58,7 +58,7 @@ export const Menu: typeof ImageController = ({ ...brev }) => {
           <li className="text-sm">
             👇🏻¿do you want agend a appoitment with the dentist? 👇🏻
           </li>
-          <button className="bg-gray-200 w-[10em] h-[3em] text-[0.3em] rounded-md text-blue-500 uppercase flex place-content-evenly place-items-center m-5">
+          <button className="tablet:bg-gray-200 tablet:w-[10em] tablet:h-[3em] tablet:text-[0.3em] tablet:rounded-md tablet:text-blue-500 tablet:uppercase tablet:flex tablet:place-content-evenly tablet:place-items-center tablet:m-5 movil:bg-gray-200 movil:flex movil:place-items-center movil:place-content-center movil:text-blue-500 movil:w-32 movil:h-10 movil:rounded-lg movil:uppercase ">
             appoitment
             <span className="material-symbols-outlined">oral_disease</span>
           </button>
