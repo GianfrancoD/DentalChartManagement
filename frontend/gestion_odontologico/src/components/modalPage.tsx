@@ -9,7 +9,7 @@ export const Modalp: React.FC<Props> = ({ isOpen, onClose, title }) => {
   return (
     <>
       {isOpen && (
-        <div className="w-full h-full bg-black bg-opacity-50 backdrop-blur-sm fixed flex place-content-center place-items-center -translate-y-[26.2rem] rounded tablet:-translate-y-[48.6rem] laptop:-translate-y-[47.8rem] desktop:-translate-y-[31.9rem] movil:-translate-y-[9.9rem]">
+        <div className="w-full h-full bg-black bg-opacity-50 backdrop-blur-sm fixed flex place-content-center place-items-center -translate-y-[26.2rem] rounded tablet:-translate-y-[48.6rem] laptop:-translate-y-[47.8rem] desktop:-translate-y-[31.9rem] movil:-translate-y-[9.7rem]">
           <div className="bg-white p-5 rounded-[1.5rem] flex flex-col justify-center gap-5 tablet:w-[43em] tablet:h-[44em] tablet:mb-10 movil:w-60 movil:h-96 movil:translate-y-10">
             <img
               src="https://cdn.pixabay.com/photo/2013/07/12/15/50/dentistry-150409_1280.png"
@@ -38,7 +38,7 @@ export const Modalp: React.FC<Props> = ({ isOpen, onClose, title }) => {
                 Password
               </label>
               <input
-                type="text"
+                type="password"
                 placeholder="Write your Password"
                 className="tablet:flex tablet:place-content-center tablet:w-[30rem] tablet:h-10 tablet:text-center tablet:bg-gray-50 tablet:rounded-lg tablet:border-solid tablet:border-2 tablet:border-gray-200 tablet:shadow-lg tablet:focus:shadow-gray-500/50 tablet:placeholder:text-gray-400 movil:flex movil:place-content-center movil:w-[12rem] movil:h-10 movil:text-center movil:bg-gray-50 movil:rounded-lg movil:border-solid movil:border-2 movil:border-gray-200 movil:shadow-lg movil:focus:shadow-gray-500/50 movil:placeholder:text-gray-400 movil:text-sm"
               />
