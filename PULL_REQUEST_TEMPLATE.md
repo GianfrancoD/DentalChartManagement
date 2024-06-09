@@ -1,13 +1,13 @@
-# Tipos de usuarios
+# Types of Users
 
 - [ ] Frontend
 - [ ] Backend
 
-# Tecnologia
+# Tecnology
 
 - [ ] HTML
 - [ ] CSS3
-- [ ] Javascript / REACT
+- [ ] REACT
 - [ ] Docs
 - [ ] Json
 - [ ] Archivo plano (.txt)
@@ -15,8 +15,9 @@
 - [ ] Flask
 - [ ] Postgresql
 - [ ] Docker
+- [ ] SQL
 
-# Tipo de actividad
+# Type of Branch
 
 - [ ] Feature
 - [ ] Changes
@@ -25,3 +26,36 @@
 - [ ] Performance
 - [ ] Testing
 - [ ] Backup
+- [ ] Developer
+
+# Type of Working
+
+- [ ] Add
+- [ ] Bugs
+- [ ] Modifications
+
+# Express what you did
+
+```
+Escribe aqui lo que trabajaste:
+
+-
+```
+
+# Your Name and Role
+
+| Name | Description |
+|--------|-------------|
+| ``` ``` | *Web Developer* |
+| ``` ``` | *Web Designer* |
+| ``` ``` | *Backend Designer* |
+| ``` ``` | *UX Designer* |
+| ``` ``` | *UI Designer* |
+| ``` ``` | *Data Analyst* |
+| ``` ``` | *Testing* |
+
+# ScreenPhoto
+
+<img src="" alt="Se agrega imagenes para un mejor contexto del trabajo" with="10px" />
+
+
