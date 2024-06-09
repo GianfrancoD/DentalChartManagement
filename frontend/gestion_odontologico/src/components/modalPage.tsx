@@ -1,7 +1,8 @@
 import { Props } from "../interfaces/modal_interfaces";
+import React, { MouseEvent } from "react";
 
 export const Modalp: React.FC<Props> = ({ isOpen, onClose, title }) => {
-  const handleCloseModal = (e: { preventDefault: () => void }) => {
+  const handleCloseModal = (e: MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     onClose();
   };
