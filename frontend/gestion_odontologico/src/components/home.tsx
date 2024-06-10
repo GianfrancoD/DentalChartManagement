@@ -41,7 +41,7 @@ export const Hdashboard = () => {
                 </div>
               </article>
             </li>
-            <li className="tablet:flex tablet:place-content-center tablet:flex-col tablet:bg-blue-300 tablet:w-96 laptop:w-96 laptop:h-60 desktop:w-96 tablet:rounded-[0.5em]">
+            <li className="tablet:flex tablet:place-content-center tablet:flex-col tablet:bg-blue-300 tablet:w-96 laptop:w-96 laptop:h-60 desktop:w-80 tablet:rounded-[0.5em]">
               <article>
                 <ul className="flex gap-5 mx-3">
                   <li>
