@@ -1,6 +1,7 @@
 import React from "react";
 import { Menu } from "./components/navPage";
-import { Hdashboard } from "./components/homedashboard";
+import { Hdashboard } from "./components/home";
+import { Info } from "./components/info";
 
 const App: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const App: React.FC = () => {
         className="w-full h-full"
       />
       <Hdashboard />
+      <Info />
     </>
   );
 };

@@ -21,28 +21,30 @@ export const Modalp: React.FC<Props> = ({ isOpen, onClose, title }) => {
               {title}
             </h1>
             <div className="tablet:flex tablet:place-content-center tablet:flex-col tablet:place-items.center tablet:-translate-y-[3em] tablet:m-auto movil:flex movil:place-content-center movil:flex-col movil:place-items.center movil:-translate-y-[4.5em] movil:m-auto">
-              <label htmlFor="" className="">
-                <span className="material-symbols-outlined tablet:material-symbols-outlined tablet:translate-y-[1.6em] tablet:translate-x-[1em] movil:material-symbols-outlined movil:translate-y-[1.7em] movil:translate-x-[0.3em] text-[1.4em]">
-                  id_card
-                </span>{" "}
-                Name
-              </label>
-              <input
-                type="text"
-                placeholder="Write your Name"
-                className="tablet:flex tablet:place-content-center tablet:w-[30rem] tablet:h-10 tablet:text-center tablet:bg-gray-50 tablet:rounded-lg tablet:border-solid tablet:border-2 tablet:border-gray-200 tablet:shadow-lg tablet:focus:shadow-gray-500/50 tablet:placeholder:text-gray-400 movil:flex movil:place-content-center movil:w-[12rem] movil:h-10 movil:text-center movil:bg-gray-50 movil:rounded-lg movil:border-solid movil:border-2 movil:border-gray-200 movil:shadow-lg movil:focus:shadow-gray-500/50 movil:placeholder:text-gray-400 movil:text-sm"
-              />
-              <label htmlFor="">
-                <span className="material-symbols-outlined tablet:material-symbols-outlined tablet:translate-x-[1em] tablet:translate-y-[1.6em] movil:material-symbols-outlined movil:translate-y-[1.7em] movil:translate-x-[0.3em] text-[1.4em]">
-                  password
-                </span>
-                Password
-              </label>
-              <input
-                type="password"
-                placeholder="Write your Password"
-                className="tablet:flex tablet:place-content-center tablet:w-[30rem] tablet:h-10 tablet:text-center tablet:bg-gray-50 tablet:rounded-lg tablet:border-solid tablet:border-2 tablet:border-gray-200 tablet:shadow-lg tablet:focus:shadow-gray-500/50 tablet:placeholder:text-gray-400 movil:flex movil:place-content-center movil:w-[12rem] movil:h-10 movil:text-center movil:bg-gray-50 movil:rounded-lg movil:border-solid movil:border-2 movil:border-gray-200 movil:shadow-lg movil:focus:shadow-gray-500/50 movil:placeholder:text-gray-400 movil:text-sm"
-              />
+              <form action="" method="GET">
+                <label htmlFor="" className="">
+                  <span className="material-symbols-outlined tablet:material-symbols-outlined tablet:translate-y-[1.6em] tablet:translate-x-[1em] movil:material-symbols-outlined movil:translate-y-[1.7em] movil:translate-x-[0.3em] text-[1.4em]">
+                    id_card
+                  </span>{" "}
+                  Name
+                </label>
+                <input
+                  type="text"
+                  placeholder="Write your Name"
+                  className="tablet:flex tablet:place-content-center tablet:w-[30rem] tablet:h-10 tablet:text-center tablet:bg-gray-50 tablet:rounded-lg tablet:border-solid tablet:border-2 tablet:border-gray-200 tablet:shadow-lg tablet:focus:shadow-gray-500/50 tablet:placeholder:text-gray-400 movil:flex movil:place-content-center movil:w-[12rem] movil:h-10 movil:text-center movil:bg-gray-50 movil:rounded-lg movil:border-solid movil:border-2 movil:border-gray-200 movil:shadow-lg movil:focus:shadow-gray-500/50 movil:placeholder:text-gray-400 movil:text-sm"
+                />
+                <label htmlFor="">
+                  <span className="material-symbols-outlined tablet:material-symbols-outlined tablet:translate-x-[1em] tablet:translate-y-[1.6em] movil:material-symbols-outlined movil:translate-y-[1.7em] movil:translate-x-[0.3em] text-[1.4em]">
+                    password
+                  </span>
+                  Password
+                </label>
+                <input
+                  type="password"
+                  placeholder="Write your Password"
+                  className="tablet:flex tablet:place-content-center tablet:w-[30rem] tablet:h-10 tablet:text-center tablet:bg-gray-50 tablet:rounded-lg tablet:border-solid tablet:border-2 tablet:border-gray-200 tablet:shadow-lg tablet:focus:shadow-gray-500/50 tablet:placeholder:text-gray-400 movil:flex movil:place-content-center movil:w-[12rem] movil:h-10 movil:text-center movil:bg-gray-50 movil:rounded-lg movil:border-solid movil:border-2 movil:border-gray-200 movil:shadow-lg movil:focus:shadow-gray-500/50 movil:placeholder:text-gray-400 movil:text-sm"
+                />
+              </form>
             </div>
             <strong className="flex flex-wrap tablet:translate-x-[34em] tablet-translate-y-[3em] movil:translate-x-[0em] movil:-translate-y-[4.5em] movil:text-sm">
               <a href="#">Forgot password?</a>
