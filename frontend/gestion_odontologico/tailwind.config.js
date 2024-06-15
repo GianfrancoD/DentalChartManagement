@@ -10,6 +10,8 @@ export default {
     },
     screens: {
       movil: "20em",
+      movilM: "23em",
+      movilL: "26.56em",
       tablet: "40em",
       laptop: "64em",
       desktop: "80em",
