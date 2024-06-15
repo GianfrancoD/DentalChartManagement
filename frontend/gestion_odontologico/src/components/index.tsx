@@ -32,21 +32,26 @@ export const Navegator: React.FC = () => {
                 <a href="">Home</a>
               </li>
               <li className="movil:m-5">
+                <a href="">Pricing</a>
+              </li>
+              <li className="movil:m-5">
                 <a href="">Blog</a>
               </li>
               <li className="movil:m-5">
-                <a href="">bout</a>
+                <a href="">About</a>
               </li>
               <hr className="movil:w-[80%] m-auto text-white" />
               <a
                 href=""
-                className="tablet:hidden movil:rounded movil:m-5 movil:absolute movil:text-center movil:w-[17rem] movil:bg-indigo-0 movil:px-3.5 movil:py-2.5 movil:text-md movil:font-semibold movil:text-indigo-500 movil:hover:bg-indigo-500 movil:focus-visible:outline movil:focus-visible:outline-2 movil:focus-visible:outline-offset-2 movil:focus-visible:outline-indigo-600"
+                className="tablet:hidden 
+                movil:rounded movil:m-5 movil:absolute movil:text-center movil:w-[17rem] movil:bg-indigo-0 movil:px-3.5 movil:py-2.5 movil:text-md movil:font-semibold movil:text-indigo-500 movil:hover:bg-indigo-500 movil:focus-visible:outline movil:focus-visible:outline-2 movil:focus-visible:outline-offset-2 movil:focus-visible:outline-indigo-600 movilM:absolute movilM:right-[2.5em] movilL:absolute movilL:left-[3em]"
               >
                 Sign In
               </a>
               <a
                 href="#"
-                className="tablet:hidden movil:rounded movil:-bottom-[9em] movil:m-5 movil:absolute movil:text-center movil:w-[17rem] movil:bg-indigo-600 movil:px-3.5 movil:py-2.5 movil:text-md movil:font-semibold movil:text-white movil:shadow-sm movil:hover:bg-indigo-500 movil:focus-visible:outline movil:focus-visible:outline-2 movil:focus-visible:outline-offset-2 movil:focus-visible:outline-indigo-600"
+                className="tablet:hidden 
+                movil:rounded movil:-bottom-[9em] movil:m-5 movil:absolute movil:text-center movil:w-[17rem] movil:bg-indigo-600 movil:px-3.5 movil:py-2.5 movil:text-md movil:font-semibold movil:text-white movil:shadow-sm movil:hover:bg-indigo-500 movil:focus-visible:outline movil:focus-visible:outline-2 movil:focus-visible:outline-offset-2 movil:focus-visible:outline-indigo-600 movilM:absolute movilM:right-[2.5em] movilL:absolute movilL:left-[3em]"
               >
                 Sign Up
               </a>
