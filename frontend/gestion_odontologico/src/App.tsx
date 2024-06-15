@@ -1,5 +1,6 @@
 import React from "react";
-import { Navegator } from "./components";
+import { Navegator } from "./components/navComponents";
+import { Maincomponent } from "./components/mainComponents";
 
 const App: React.FC = () => {
   return (
@@ -9,7 +10,9 @@ const App: React.FC = () => {
           <Navegator />
         </nav>
       </header>
-      <main>probando</main>
+      <main>
+        <Maincomponent />
+      </main>
     </>
   );
 };
