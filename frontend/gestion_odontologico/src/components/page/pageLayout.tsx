@@ -1,12 +1,14 @@
-export const Maincomponent = () => {
+import { img_interfaces } from "../../interfaces/img_interface";
+
+export const Layout: React.FC<img_interfaces> = ({ src, alt }) => {
   return (
     <div className="m-1">
       <header className="text-white m-0 flex place-content-center flex-col place-items-center">
         <h1 className="movil:text-[2.5em] tablet:text-[4em] text-center font-bold">
-          Page for dentist
+          This´s Software of and for dental officeing
           <p className="tablet:text-[0.3em] tablet:w-[35em] tablet:m-auto movil:text-[0.5em] movil:w-[15em] movilM:w-[18em] font-light m-3 text-gray-400">
-            Our landing page template works on all devices, so you only have to
-            set it up once, and get beautiful results forever.
+            here we facility the life with the software, where your can
+            visuality all result of you consult of each of client.
           </p>
         </h1>
         <br />
@@ -19,10 +21,7 @@ export const Maincomponent = () => {
           </li>
         </ul>
         <figure className="movil:m-5 laptop:m-[2em]">
-          <img
-            src="https://preview.cruip.com/open-pro/images/hero-image-01.jpg"
-            alt=""
-          />
+          <img src={src} alt={alt} />
         </figure>
       </header>
       <main></main>

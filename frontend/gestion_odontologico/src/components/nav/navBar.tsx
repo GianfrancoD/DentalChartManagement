@@ -1,6 +1,6 @@
 import { useState, MouseEvent } from "react";
 
-export const Navegator: React.FC = () => {
+export const Navigation: React.FC = () => {
   const [iconos, setIcononos] = useState("menu");
   const [showMenu, setShowMenu] = useState(false);
 
@@ -40,7 +40,7 @@ export const Navegator: React.FC = () => {
               </li>
               <li className="movil:m-5 movil:bg-gray-600 tablet:bg-black">
                 <a href="" className="movil:bg-gray-600 tablet:bg-black">
-                  Blog
+                  Appointment
                 </a>
               </li>
               <li className="movil:m-5 movil:bg-gray-600 tablet:bg-black">
