@@ -6,7 +6,14 @@ const App: React.FC = () => {
   return (
     <>
       <nav>
-        <Navigation />
+        <Navigation
+          home={"Home"}
+          pricing={"Pricing"}
+          appoinment={"Appoinment"}
+          about={"About"}
+          signIn={"Sign in"}
+          signUp={"Sign up"}
+        />
       </nav>
       <main>
         <Layout

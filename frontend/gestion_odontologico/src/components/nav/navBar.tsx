@@ -1,6 +1,14 @@
 import { useState, MouseEvent } from "react";
+import { menus } from "../../interfaces/nav_interfaces";
 
-export const Navigation: React.FC = () => {
+export const Navigation: React.FC<menus> = ({
+  home,
+  pricing,
+  appoinment,
+  about,
+  signIn,
+  signUp,
+}) => {
   const [iconos, setIcononos] = useState("menu");
   const [showMenu, setShowMenu] = useState(false);
 
@@ -9,6 +17,7 @@ export const Navigation: React.FC = () => {
     setIcononos((preIcon) => (preIcon === "menu" ? "close" : "menu"));
     setShowMenu(!showMenu);
   };
+
   return (
     <>
       <nav className=" bg-red-0 h-[5rem] place-content-center">
@@ -24,28 +33,31 @@ export const Navigation: React.FC = () => {
           <li>
             <ul
               className={`tablet:flex tablet:flex-row tablet:gap-10 tablet:relative tablet:m-0 tablet:ml-0 tablet:bg-transparent
-                movil:absolute movil:-ml-[48.9%] movil:m-8 movil:p-2 movil:text-left text-white movil:bg-gray-600 movil:w-full movil:rounded-md  ${
-                  !showMenu ? "movil:hidden tablet:flex" : ""
-                }`}
+            movil:absolute movil:-ml-[48.9%] movil:m-8 movil:p-2 movil:text-left text-white movil:bg-gray-600 movil:w-full movil:rounded-md  ${
+              !showMenu ? "movil:hidden tablet:flex" : ""
+            }`}
             >
               <li className="movil:m-5 movil:bg-gray-600 tablet:bg-black">
-                <a href="" className="movil:bg-gray-600 tablet:bg-black">
-                  Home
+                <a href="/" className="movil:bg-gray-600 tablet:bg-black">
+                  {home}
                 </a>
               </li>
               <li className="movil:m-5 movil:bg-gray-600 tablet:bg-black">
                 <a href="" className="movil:bg-gray-600 tablet:bg-black">
-                  Pricing
+                  {pricing}
+                </a>
+              </li>
+              <li className="movil:m-5 movil:bg-gray-600 tablet:bg-black">
+                <a
+                  href="/appoinment"
+                  className="movil:bg-gray-600 tablet:bg-black"
+                >
+                  {appoinment}
                 </a>
               </li>
               <li className="movil:m-5 movil:bg-gray-600 tablet:bg-black">
                 <a href="" className="movil:bg-gray-600 tablet:bg-black">
-                  Appointment
-                </a>
-              </li>
-              <li className="movil:m-5 movil:bg-gray-600 tablet:bg-black">
-                <a href="" className="movil:bg-gray-600 tablet:bg-black">
-                  About
+                  {about}
                 </a>
               </li>
               <hr className="movil:w-[80%] m-auto text-white" />
@@ -53,16 +65,16 @@ export const Navigation: React.FC = () => {
                 <a
                   href="#"
                   className="tablet:hidden 
-                movil:rounded movil:m-5 movil:absolute movil:text-center movil:w-[17rem] movil:bg-transparent movil:px-3.5 movil:py-2.5 movil:text-md movil:font-semibold movil:text-indigo-400 movil:hover:bg-gray-700 movil:focus-visible:outline movil:focus-visible:outline-2 movil:focus-visible:outline-offset-2 movil:focus-visible:outline-indigo-600 movilM:absolute movilM:right-[2.5em] movilL:absolute movilL:left-[3em]"
+            movil:rounded movil:m-5 movil:absolute movil:text-center movil:w-[17rem] movil:bg-transparent movil:px-3.5 movil:py-2.5 movil:text-md movil:font-semibold movil:text-indigo-400 movil:hover:bg-gray-700 movil:focus-visible:outline movil:focus-visible:outline-2 movil:focus-visible:outline-offset-2 movil:focus-visible:outline-indigo-600 movilM:absolute movilM:right-[2.5em] movilL:absolute movilL:left-[3em]"
                 >
-                  Sign In
+                  {signIn}
                 </a>
                 <a
                   href="#"
                   className="tablet:hidden 
-                movil:rounded movil:m-5 movil:top-64 movil:absolute movil:text-center movil:w-[17rem] movil:bg-indigo-0 movil:px-3.5 movil:py-2.5 movil:text-md movil:font-semibold movil:text-white movil:bg-blue-500 movil:hover:bg-indigo-500 movil:focus-visible:outline movil:focus-visible:outline-2 movil:focus-visible:outline-offset-2 movil:focus-visible:outline-indigo-600 movilM:absolute movilM:right-[2.5em] movilL:absolute movilL:left-[3em]"
+            movil:rounded movil:m-5 movil:top-64 movil:absolute movil:text-center movil:w-[17rem] movil:bg-indigo-0 movil:px-3.5 movil:py-2.5 movil:text-md movil:font-semibold movil:text-white movil:bg-blue-500 movil:hover:bg-indigo-500 movil:focus-visible:outline movil:focus-visible:outline-2 movil:focus-visible:outline-offset-2 movil:focus-visible:outline-indigo-600 movilM:absolute movilM:right-[2.5em] movilL:absolute movilL:left-[3em]"
                 >
-                  Sign Up
+                  {signUp}
                 </a>
               </div>
             </ul>

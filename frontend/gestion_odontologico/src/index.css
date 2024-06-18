@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /*html {
-  filter: invert(2);
+  filter: invert(1);
 }*/
 * {
   background: rgb(0, 0, 0);
