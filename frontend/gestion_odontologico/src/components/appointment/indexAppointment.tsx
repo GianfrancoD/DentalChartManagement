@@ -22,7 +22,9 @@ export const AppointmentService: React.FC = () => {
         </header>
         <ul className="flex flex-row movil:w-[80vw] movil:h-[10vh] tablet:gap-5 movil:gap-2 movil:m-4 tablet:-m-4 flex-wrap place-content-center">
           <li className="flex flex-col flex-wrap movil:w-[18.5rem] movilL:w-[21rem] tablet:w-[18.5rem] laptop:w-[24.9rem] desktop:w-[35.3rem]">
-            <label className="text-white">Name*</label>
+            <label className="text-white flex ">
+              Name<div className="text-red-500">*</div>
+            </label>
             <input
               type="text"
               pattern="[a-zA-Z]+"
@@ -34,7 +36,9 @@ export const AppointmentService: React.FC = () => {
             />
           </li>
           <li className="flex flex-col flex-wrap movil:w-[18.5rem] movilL:w-[21rem] tablet:w-[18.5rem] laptop:w-[24.9rem] desktop:w-[35.3rem]">
-            <label className="text-white">Lastname*</label>
+            <label className="text-white flex ">
+              Lastname<div className="text-red-500">*</div>
+            </label>
             <input
               type="text"
               pattern="[a-zA-Z]+"
@@ -49,7 +53,9 @@ export const AppointmentService: React.FC = () => {
         <br />
         <ul className="flex flex-col gap-3 flex-wrap">
           <li>
-            <label className="text-white">Email*</label>
+            <label className="text-white flex">
+              Email<div className="text-red-500">*</div>
+            </label>
             <input
               type="email"
               className="bg-gray-800 flex w-[80vw] h-10 text-gray-400 rounded-md"
@@ -61,7 +67,9 @@ export const AppointmentService: React.FC = () => {
             />
           </li>
           <li>
-            <label className="text-white">Phone Number*</label>
+            <label className="text-white flex">
+              Phone Number<div className="text-red-500">*</div>
+            </label>
             <input
               type="text"
               className="bg-gray-800 text-gray-400 flex w-[80vw] h-10 rounded-md"
@@ -73,7 +81,9 @@ export const AppointmentService: React.FC = () => {
             />
           </li>
           <li>
-            <label className="text-white">Date*</label>
+            <label className="text-white flex">
+              Date<div className="text-red-500">*</div>
+            </label>
             <input
               type="date"
               className="bg-gray-800 flex w-[80vw] h-10 text-center text-gray-400 rounded-md"
