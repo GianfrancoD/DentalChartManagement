@@ -1,17 +1,25 @@
 import React from "react";
-import { Navegator } from "./components/navComponents";
-import { Maincomponent } from "./components/mainComponents";
+import { Navigation } from "./components/nav/navBar";
+import { Layout } from "./components/page/pageLayout";
 
 const App: React.FC = () => {
   return (
     <>
-      <header>
-        <nav>
-          <Navegator />
-        </nav>
-      </header>
+      <nav>
+        <Navigation
+          home={"Home"}
+          pricing={"Pricing"}
+          appoinment={"Appoinment"}
+          about={"About"}
+          signIn={"Sign in"}
+          signUp={"Sign up"}
+        />
+      </nav>
       <main>
-        <Maincomponent />
+        <Layout
+          src={"https://preview.cruip.com/open-pro/images/hero-image-01.jpg"}
+          alt={"imagen central"}
+        />
       </main>
     </>
   );
