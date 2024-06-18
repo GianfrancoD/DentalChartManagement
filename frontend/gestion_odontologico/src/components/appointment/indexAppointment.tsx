@@ -1,14 +1,6 @@
 import { Navigation } from "../nav/navBar";
 
-interface forms {
-  title: string;
-  name: string;
-  lastName: string;
-  email: string;
-  phonenumber: number;
-}
-
-export const AppointmentService: React.FC<forms> = ({}) => {
+export const AppointmentService: React.FC = () => {
   return (
     <>
       <Navigation
