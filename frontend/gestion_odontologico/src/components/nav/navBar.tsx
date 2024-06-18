@@ -40,7 +40,9 @@ export const Navigation: React.FC<menus> = ({
             >
               <li className="movil:m-5 movil:bg-gray-600 tablet:bg-black">
                 <a className="movil:bg-gray-600 tablet:bg-black">
-                  <Link to="/">{home}</Link>
+                  <Link to="/" className="movil:bg-gray-600 tablet:bg-black">
+                    {home}
+                  </Link>
                 </a>
               </li>
               <li className="movil:m-5 movil:bg-gray-600 tablet:bg-black">
@@ -50,7 +52,12 @@ export const Navigation: React.FC<menus> = ({
               </li>
               <li className="movil:m-5 movil:bg-gray-600 tablet:bg-black">
                 <a className="movil:bg-gray-600 tablet:bg-black">
-                  <Link to="/appoinment">{appoinment}</Link>
+                  <Link
+                    to="/appoinment"
+                    className="movil:bg-gray-600 tablet:bg-black"
+                  >
+                    {appoinment}
+                  </Link>
                 </a>
               </li>
               <li className="movil:m-5 movil:bg-gray-600 tablet:bg-black">
