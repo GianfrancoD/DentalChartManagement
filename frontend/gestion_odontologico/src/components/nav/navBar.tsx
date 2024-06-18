@@ -1,5 +1,6 @@
 import { useState, MouseEvent } from "react";
 import { menus } from "../../interfaces/nav_interfaces";
+import { Link } from "react-router-dom";
 
 export const Navigation: React.FC<menus> = ({
   home,
@@ -38,8 +39,8 @@ export const Navigation: React.FC<menus> = ({
             }`}
             >
               <li className="movil:m-5 movil:bg-gray-600 tablet:bg-black">
-                <a href="/" className="movil:bg-gray-600 tablet:bg-black">
-                  {home}
+                <a className="movil:bg-gray-600 tablet:bg-black">
+                  <Link to="/">{home}</Link>
                 </a>
               </li>
               <li className="movil:m-5 movil:bg-gray-600 tablet:bg-black">
@@ -48,11 +49,8 @@ export const Navigation: React.FC<menus> = ({
                 </a>
               </li>
               <li className="movil:m-5 movil:bg-gray-600 tablet:bg-black">
-                <a
-                  href="/appoinment"
-                  className="movil:bg-gray-600 tablet:bg-black"
-                >
-                  {appoinment}
+                <a className="movil:bg-gray-600 tablet:bg-black">
+                  <Link to="/appoinment">{appoinment}</Link>
                 </a>
               </li>
               <li className="movil:m-5 movil:bg-gray-600 tablet:bg-black">
