@@ -28,7 +28,7 @@ export const AppointmentService: React.FC = () => {
             <input
               type="text"
               pattern="[a-zA-Z]+"
-              minLength={5}
+              minLength={4}
               maxLength={10}
               className="bg-gray-800 text-gray-400  rounded-md h-10"
               placeholder="  Name"
