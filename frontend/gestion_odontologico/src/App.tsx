@@ -5,11 +5,9 @@ import { Layout } from "./components/page/pageLayout";
 const App: React.FC = () => {
   return (
     <>
-      <header>
-        <nav>
-          <Navigation />
-        </nav>
-      </header>
+      <nav>
+        <Navigation />
+      </nav>
       <main>
         <Layout
           src={"https://preview.cruip.com/open-pro/images/hero-image-01.jpg"}
