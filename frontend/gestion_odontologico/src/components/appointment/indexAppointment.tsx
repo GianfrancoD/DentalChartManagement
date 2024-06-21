@@ -12,7 +12,8 @@ export const AppointmentService: React.FC = () => {
         signUp={"Sign Up"}
       />
       <form
-        action=""
+        action="/save_user"
+        method="POST"
         className="border border-black flex flex-col tablet:py-[5.5%] movil:py-[2rem] movil:m-3 tablet:m-0 place-content-center place-items-center"
       >
         <header className="flex my-10 flex-wrap">
@@ -32,6 +33,7 @@ export const AppointmentService: React.FC = () => {
               maxLength={10}
               className="bg-gray-800 text-gray-400  rounded-md h-10"
               placeholder="  Name"
+              name="name"
               required
             />
           </li>
@@ -46,6 +48,7 @@ export const AppointmentService: React.FC = () => {
               maxLength={10}
               className="bg-gray-800 h-10 text-gray-400 rounded-md"
               placeholder="  Lastname"
+              name="lastname"
               required
             />
           </li>
@@ -58,6 +61,7 @@ export const AppointmentService: React.FC = () => {
             </label>
             <input
               type="email"
+              name="email"
               className="bg-gray-800 flex w-[80vw] h-10 text-gray-400 rounded-md"
               placeholder="  Email"
               minLength={2}
@@ -77,6 +81,7 @@ export const AppointmentService: React.FC = () => {
               minLength={10}
               maxLength={11}
               pattern="[0-9]+"
+              name="phone"
               required
             />
           </li>
@@ -86,12 +91,16 @@ export const AppointmentService: React.FC = () => {
             </label>
             <input
               type="date"
+              name="datetime"
               className="bg-gray-800 flex w-[80vw] h-10 text-center text-gray-400 rounded-md"
               required
             />
           </li>
         </ul>
-        <button className="bg-blue-500 text-white font-bold uppercase m-10 w-[10rem] h-[3rem] rounded-md">
+        <button
+          className="bg-blue-500 text-white font-bold uppercase m-10 w-[10rem] h-[3rem] rounded-md"
+          type="submit"
+        >
           Send
         </button>
       </form>

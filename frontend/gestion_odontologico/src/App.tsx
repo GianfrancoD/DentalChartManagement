@@ -1,10 +1,11 @@
-import React from "react";
 import { Navigation } from "./components/nav/navBar";
 import { Layout } from "./components/page/pageLayout";
+import { Backservices } from "./services/backServices";
 
 const App: React.FC = () => {
   return (
     <>
+      <Backservices />
       <nav>
         <Navigation
           home={"Home"}
